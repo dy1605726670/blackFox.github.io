@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | Gridea</title>
+<title>MySql数据库基本概念 | Gridea</title>
 <meta name="description" content="追忆" />
 <link rel="shortcut icon" href="https://dy1605726670.github.io/blackFox.github.io/favicon.ico">
 <link rel="stylesheet" href="https://dy1605726670.github.io/blackFox.github.io/styles/main.css">
@@ -15,14 +15,19 @@
 <script src="https://dy1605726670.github.io/blackFox.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://dy1605726670.github.io/blackFox.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+    <meta name="description" content="MySql数据库基本概念
+数据库（DB）
 
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+
+由构成信息的数据组成的存储
+
+
+指长期存储在计算机内、有组织的可共享的数据集合
+
+
+数据库系统（DBMS）
+
+由数据库、存储和管理数据库中的软件，以显示数据并使用户能够与数据库系统进行交互的应用..." />
     <meta name="keywords" content="" />
     <script src="https://dy1605726670.github.io/blackFox.github.io/media/js/waterfall.min.js"></script>
     <script src="https://dy1605726670.github.io/blackFox.github.io/media/js/prism.min.js"></script>
@@ -99,14 +104,14 @@
         <div class="center content">
           <div class="featured-image cover" style="background-image: url('');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2019-01-25"><i class="fa fa-calendar"></i><span class="lately">1 年前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2020-07-05"><i class="fa fa-calendar"></i><span class="lately">1 分钟前</span></time>
               
             </div>
             <div class="info">
               <div class="tags ">
                 
               </div>
-              <h1 class="title ularge white bold">关于</h1>
+              <h1 class="title ularge white bold">MySql数据库基本概念</h1>
             </div>
           </div>
         </div>  
@@ -116,13 +121,88 @@
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                  <h3 id="mysql数据库基本概念">MySql数据库基本概念</h3>
+<p>数据库（DB）</p>
+<ul>
+<li>
+<p>由构成信息的数据组成的存储</p>
+</li>
+<li>
+<p>指长期存储在计算机内、有组织的可共享的数据集合</p>
+</li>
+</ul>
+<p>数据库系统（DBMS）</p>
+<ul>
+<li>由数据库、存储和管理数据库中的软件，以显示数据并使用户能够与数据库系统进行交互的应用程序组成</li>
+<li>即，由数据库及其管理软件组成的系统</li>
+</ul>
+<p>数据库管理员（DBA）</p>
+<ul>
+<li>DataBase Administrator</li>
+<li>即DBMS来管理数据的专业人员</li>
+</ul>
+<h4 id="数据库的基本存储单位表table">数据库的基本存储单位：表（Table）</h4>
+<ul>
+<li>一个表可包含若干个字段（列）</li>
+<li>每行元素叫做实体（对象）</li>
+</ul>
+<h4 id="数据库的类型">数据库的类型</h4>
+<ul>
+<li>
+<p>纯文本数据库/数据岛（XML）</p>
+<ul>
+<li>
+<p>适用于小型应用，对大中型应用来说存在诸多的限制</p>
+</li>
+<li>
+<p>只能顺序访问，不能随机访问</p>
+</li>
+<li>
+<p>查找数据和数据关系或多用户访问进行写操作困难</p>
+</li>
+</ul>
+</li>
+<li>
+<p>关系型数据库</p>
+<ul>
+<li>Microsoft Access、Microsoft SQL Server</li>
+<li>MySQL、MariaDB</li>
+</ul>
+</li>
+<li>
+<p>非关系数据库（NoSQL）</p>
+<ul>
+<li>Redis（键值存储）</li>
+<li>Cassandra（列存储）</li>
+<li>MongoDB（面向文档）</li>
+<li>Neo4j（图形数据库）</li>
+</ul>
+</li>
+</ul>
+<h4 id="sql语言structured-query-language的组成">SQL语言（Structured Query Language）的组成</h4>
+<ul>
+<li>数据库定义语言（DDL），用来定义和管理数据对象，如数据库、表等
+<ul>
+<li><code>crrate</code> 、<code>drop</code>  、<code>alter</code></li>
+</ul>
+</li>
+<li>数据操作语言（DML），用于操作数据库对象中包含的数据
+<ul>
+<li><code>insert</code>、<code>update</code>、<code>delete</code></li>
+</ul>
+</li>
+<li>数据库查询语言（DQL），用于查询数据库
+<ul>
+<li><code>select</code></li>
+</ul>
+</li>
+<li>数据控制语言（DCL），用来管理数据库，包括管理权限和数据更改
+<ul>
+<li><code>grant</code>、<code>commit</code>、<code>rollback</code></li>
+</ul>
+</li>
+</ul>
+<p><a href="%E4%BF%A1%E6%81%AF%E6%94%BF%E7%AD%96%E4%B8%8E%E6%B3%95%E8%A7%84.html">信息政策法规</a></p>
 
                 </div>
                 <div class="clear"></div>
@@ -132,6 +212,19 @@
 
             <section class="related section">
               
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://dy1605726670.github.io/blackFox.github.io/post-images/hello-gridea.png');"></div>
+                 <a href="https://dy1605726670.github.io/blackFox.github.io/post/hello-gridea/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2018-12-12">2018-12-12</time>
+                  <h4 class="title white no-margin">Hello Gridea</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://dy1605726670.github.io/blackFox.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
               
 
                 <div class="clear"></div>
